@@ -1,0 +1,243 @@
+:root{
+    --dark-color : #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/********* Start Main Component **************/
+.main-btn{
+    background-color: var(--red-color) ;
+    color: var(--yellow-color);
+    padding: .5rem 1.5rem;
+}
+
+.main-text::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/********* End Main Component **************/
+
+/* Start Nav Bar */
+
+.navbar{
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .search{
+    color: var(--green-color);
+    border-left:  1px solid var(--green-color);
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    border: 1px solid white;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    border-color: var(--green-color);
+}
+
+.main-btn:hover{
+    color: var(--dark-color);
+}
+/* End Nav Bar */
+
+/* Start Landing */
+.landpage{
+    background-color: var(--dark-color);
+    height: calc(100vh - 72px);
+}
+/* End Landing */
+
+/* Start Features */
+.features .icon-holder{
+    height: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .icon{
+    color: var(--green-color);
+    font-size: 5rem;
+}
+
+.features .icon-holder .number{
+    color: var(--section-color);
+    font-size: 12rem;
+}
+
+.features  .feat h4{
+    color: var(--yellow-color);
+}
+/* End Features */
+/* Start Our work */
+.our-work{
+    background-color: var(--section-color);
+}
+
+.our-work ul li {
+    color: var(--dark-color);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+} 
+
+.our-work ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul .active:hover,
+.our-work ul .active:focus{
+    color: var(--dark-color);
+}
+
+.our-work ul li:hover,
+.our-work ul li:focus{
+    color: var(--red-color);
+}
+
+.our-work .box{
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33d1cc73;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    transform: translateX(calc(-100% - 5px));
+    transition: .3s;
+    
+}
+
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+/* End Our work */
+
+/* Start About Us */
+.about-us .row p{
+    font-weight: 450;
+    font-size: 17px;
+}
+/* End About Us */
+/* Start Meet The Team */
+.meet-team{
+    background-color: var(--section-color);
+}
+
+.meet-team h2{
+    color: var(--yellow-color);
+}
+
+.meet-team .row .box h4{
+    background-color: var(--green-color);
+    color: white;
+}
+/* End Meet The Team */
+
+/* Start Projct  */
+.project{
+    background-color: var(--dark-color);
+    color: white;
+}
+/* End project */
+
+/* Start subscribe */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+
+.subscribe .container .row .text input{
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.subscribe .container .row .btn{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+
+}
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+
+.subscribe ::placeholder {
+    color: white;
+  }
+/* End subscribe */
+
+/* Start Footer */
+.footer{
+    background-color: var(--dark-color);
+}
+
+.footer .copy-right > span{
+    color: var(--green-color);
+}
+
+.footer div span{
+    color: var(--yellow-color);
+}
+
+.footer .links ul li a,
+.footer .about ul li a{
+    text-decoration: none;
+}
+
+.footer .contact .icons ul svg{
+    width: 20px;
+    height: 20px;
+}
+
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .twitter{
+    background-color: #1da1f2;
+}
+.footer .linkedin{
+background-color: #0077b5;
+}
+.footer .youtube{
+background-color: #ff0000;
+}
+
+
+/* End Footer */
